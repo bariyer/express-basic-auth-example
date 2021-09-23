@@ -1,0 +1,110 @@
+{
+	"$schema": "https://schema.postman.com/json/collection/v2.1.0/collection.json",
+	"info": {
+		"_postman_id": "39a0036c-eca7-492f-91a1-2ac23d7ee8cf",
+		"name": "Bariyer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "@bariyer/express",
+			"item": [
+				{
+					"name": "Basic Auth",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "john",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Basic Auth",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic am9objoxMjM0NTY=",
+										"description": "Base64 encoded username:password",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://localhost:3000/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Milk\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Cheese\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
