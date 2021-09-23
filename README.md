@@ -53,8 +53,10 @@
 #### 4. Open [Postman](https://www.postman.com/) or similar tool to test the API
 
 #### For Postman users
-1. Import [postman collection](bariyer-express-basic-auth.postman_collection.json) in project root.
-2. Run the basic auth request
+1. Click import button
+2. Select `Link` tab.
+3. Paste this link [https://www.getpostman.com/collections/2aa26e7d392d7237378c](https://www.getpostman.com/collections/2aa26e7d392d7237378c)
+4. Run the basic auth request
 
 #### For non-Postman users
 `GET` [http://localhost:3000/](http://localhost:3000/)
